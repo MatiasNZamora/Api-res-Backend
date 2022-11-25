@@ -1,0 +1,38 @@
+### Api reference. 
+@api = http://localhost:3000/products
+
+### Getting a product
+GET {{api}}
+
+### Getting total Products
+GET {{api}}/count
+
+### Posting a product
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "product 34",
+    "description": "gaming product 31",
+    "quantity": 100
+}
+
+### Getting a product By Id
+GET {{api}}/10
+
+### Getting all products
+GET {{api}}/
+
+### Delete a product By Id
+DELETE {{api}}/11
+
+### Update a product By Id
+PUT {{api}}/10
+
+Content-Type: application/json
+
+{
+    "name": "product 34",
+    "description": "gaming product 31",
+    "quantity": 100
+}
